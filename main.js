@@ -23,6 +23,18 @@ const objectLoader = new OBJLoader();
 objectLoader.load(
     headURL,
     function(object) {
+        console.log(object);
+
+        scene.traverse((object) => { 
+            if (object instanceof THREE.Mesh) {
+                console.log('is instance of mesh');
+                object.material = new THREE.MeshStandardMaterial({color: 0x962FFE});
+                object.material.wireframe = true;
+            } else {
+                console.log('not instance of mesh');
+            }
+        });
+        
         scene.add(object);
     },
     function(xhr) {
