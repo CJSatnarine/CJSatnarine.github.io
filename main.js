@@ -25,13 +25,13 @@ objectLoader.load(
     function(object) {
         console.log(object);
 
-        scene.traverse((object) => { 
-            if (object instanceof THREE.Mesh) {
+        object.traverse((child) => {
+            // Apparently instanceof is a curse. 
+            if (child instanceof THREE.Mesh) {
+                console.log(child.geometry);
                 console.log('is instance of mesh');
-                object.material = new THREE.MeshStandardMaterial({color: 0x962FFE});
-                object.material.wireframe = true;
-            } else {
-                console.log('not instance of mesh');
+                child.material = new THREE.MeshStandardMaterial({color: 0x962FFE});
+                child.material.wireframe = true;
             }
         });
         
@@ -41,10 +41,29 @@ objectLoader.load(
         console.log((xhr.loaded / xhr.total * 100) + '% loaded');
     },
     function(error) {
-        console.log('an error happened');
+        console.log('an error happened', error);
     }
 );
 
 function animate() {
     renderer.render(scene, camera);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
