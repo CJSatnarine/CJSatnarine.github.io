@@ -26,12 +26,12 @@ objectLoader.load(
         console.log(object);
 
         object.traverse((child) => {
-            // Apparently instanceof is a curse. 
             if (child instanceof THREE.Mesh) {
-                console.log(child.geometry);
-                console.log('is instance of mesh');
+                // Create material for the mesh.  
                 child.material = new THREE.MeshStandardMaterial({color: 0x962FFE});
                 child.material.wireframe = true;
+                child.material.wireframeLinewidth = 1;
+                child.material.emissive = (new THREE.Color().setHex(0x962FFE));
             }
         });
         
