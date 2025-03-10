@@ -2,7 +2,7 @@ import * as THREE from 'three';
 import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
 
 // Vite import for files.
-import headURL from "./models/head.obj?url";
+import headURL from "./models/wolf_head.obj?url";
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
@@ -27,6 +27,7 @@ objectLoader.load(
         console.log(object);
         modelObject = object;
         object.traverse((child) => {
+            // instance of is apparently the reason god made typescript 
             if (child instanceof THREE.Mesh) {
                 // Create material for the mesh.  
                 child.material = new THREE.MeshStandardMaterial({color: 0x962FFE});
@@ -47,25 +48,6 @@ objectLoader.load(
 );
 
 function animate() {
-    modelObject.rotateY(-THREE.MathUtils.degToRad(2));
+    modelObject.rotateY(-THREE.MathUtils.degToRad(1));
     renderer.render(scene, camera);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
