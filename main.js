@@ -1,19 +1,31 @@
+import './style.css';
 import * as THREE from 'three';
 import { OBJLoader } from 'three/addons/loaders/OBJLoader.js';
-
-// Vite import for files.
 import headURL from "./models/wolf_head.obj?url";
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-const renderer = new THREE.WebGLRenderer();
+
 let modelObject = new THREE.Object3D;
 
+// Rendering.
+const renderer = new THREE.WebGLRenderer({
+    canvas: document.querySelector('#canvas'),
+});
+renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setAnimationLoop(animate);
 document.body.appendChild(renderer.domElement);
 
-camera.position.z = 3;
+// Resizing the camera position based on window width. 
+if (window.innerWidth <= 650) {
+    camera.position.z = 5.5;
+}
+else if (window.innerWidth > 650 && window.innerWidth <= 915) {
+    camera.position.z = 4.5;
+} else {
+    camera.position.z = 3.5;
+}
 
 // Lighting. 
 const light = new THREE.HemisphereLight(0xffffbb, 0x080820, 1);
@@ -30,7 +42,7 @@ objectLoader.load(
             // instance of is apparently the reason god made typescript 
             if (child instanceof THREE.Mesh) {
                 // Create material for the mesh.  
-                child.material = new THREE.MeshStandardMaterial({color: 0x962FFE});
+                child.material = new THREE.MeshStandardMaterial({ color: 0x962FFE });
                 child.material.wireframe = true;
                 child.material.wireframeLinewidth = 1;
                 child.material.emissive = (new THREE.Color().setHex(0x962FFE));
@@ -47,6 +59,7 @@ objectLoader.load(
     }
 );
 
+// Animate function.
 function animate() {
     modelObject.rotateY(-THREE.MathUtils.degToRad(1));
     renderer.render(scene, camera);

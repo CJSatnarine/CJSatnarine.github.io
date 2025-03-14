@@ -13,8 +13,11 @@ body {
     display: block;
 }
 
-a:link, a:visited, a:hover, a:active {
-   color: rgb(150, 47, 254); 
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: rgb(150, 47, 254);
     background-color: transparent;
     text-decoration: none;
 }
