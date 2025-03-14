@@ -18,7 +18,10 @@ renderer.setAnimationLoop(animate);
 document.body.appendChild(renderer.domElement);
 
 // Resizing the camera position based on window width. 
-if (window.innerWidth <= 650) {
+if (window.innerWidth <= 400) {
+    camera.position.z = 6.5;
+}
+if (window.innerWidth > 400 && window.innerWidth <= 650) {
     camera.position.z = 5.5;
 }
 else if (window.innerWidth > 650 && window.innerWidth <= 915) {
