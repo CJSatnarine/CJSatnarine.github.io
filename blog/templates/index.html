@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+<head>
+
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@<version>/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@<version>/examples/jsm/"
+            }
+    }
+    </script>
+
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="/window.js"></script>
+
+</head>
+
+{% block content %}
+
+<body>
+    <h1 class="title">
+        {{ section.title }}
+    </h1>
+
+    <p>{{ section.content | safe }}</p>
+
+    <p><a href="{{ get_url(path='@/blog/_index.md') }}">Posts</a>.</p>
+</body>
+{% endblock content %}
