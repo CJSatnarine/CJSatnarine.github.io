@@ -1,0 +1,43 @@
+@use "colours.scss";
+
+body {
+  background-color: colours.$background;
+  font-family: 'Roboto Mono';
+}
+
+#construction {
+  position: absolute;
+  color: whitesmoke;
+  top: 10px;
+  width: 100%;
+  text-align: center;
+  z-index: 100;
+  display: block;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: colours.$purple;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+h1 {
+  color: colours.$purple;
+}
+
+p {
+  color: colours.$text;
+}
+
+// Shortcodes can be used to customise markdown stuff. 
+
+#test {
+  color: colours.$pink;
+}
+
+center {
+  color: colours.$purple;
+}
