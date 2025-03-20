@@ -11,14 +11,19 @@ let previousFrame = performance.now();
 
 // Rendering.
 const renderer = new THREE.WebGLRenderer({
-    canvas: document.querySelector('#canvas'),
+    canvas: document.querySelector('#rendering_canvas'),
 });
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setAnimationLoop(animate);
 document.body.appendChild(renderer.domElement);
 
-// Resizing the camera position based on window width. 
+// Change location of canvas. 
+let footer = document.querySelector('#footer');
+let canvas = document.querySelector('#rendering_canvas');
+footer.before(canvas);
+
+// Resizing the camera position based on window width. (change this to be automatic I guess) 
 if (window.innerWidth <= 400) {
     camera.position.z = 6.5;
 }
@@ -30,6 +35,7 @@ else if (window.innerWidth > 650 && window.innerWidth <= 915) {
 } else {
     camera.position.z = 3.5;
 }
+
 
 // Lighting. 
 const light = new THREE.HemisphereLight(0xffffbb, 0x080820, 1);

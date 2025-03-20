@@ -17,5 +17,5 @@ class Main {
 }
 ```
 
-<canvas id="canvas"/>
+<canvas id="rendering_canvas"/>
 
