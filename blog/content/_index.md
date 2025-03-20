@@ -8,7 +8,6 @@ Hey... I'm CJ! But you can call me CJ... As you can tell, this website is curren
 
 Any way, I'm an aspriring graphics programmer from Waterloo, Ontario. I've got a few weird interests in linguistics, history, maths, 3D animation, game development, and art.
 Currently, I'm spending a lot of my time learning a lot of things relating to my interests. You can check out my <a href="https://github.com/CJSatnarine" target="_blank">Github</a> to see what I'm up to.
-<canvas id="canvas"/>
 
 ```java
 class Main {
@@ -17,3 +16,6 @@ class Main {
     } 
 }
 ```
+
+<canvas id="canvas"/>
+

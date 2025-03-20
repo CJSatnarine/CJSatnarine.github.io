@@ -19,7 +19,7 @@ a:link,
 a:visited,
 a:hover,
 a:active {
-  color: colours.$purple;
+  color: colours.$links;
   background-color: transparent;
   text-decoration: none;
 }
@@ -29,15 +29,11 @@ h1 {
 }
 
 blockquote > p {
-  color: colours.$pink;
+  color: colours.$blockquote;
 }
 
 p {
   color: colours.$text;
-}
-
-#test {
-  color: colours.$pink;
 }
 
 center {

@@ -1,7 +1,16 @@
 // This is inspired by the husqy theme on monkeytype.com (https://github.com/monkeytypegame/monkeytype/blob/master/frontend/static/themes/husqy.css). 
 
-$background: #000000;
+// Colours.
 $white: #FFFFFF;
+$black: #000000;
 $purple: #962FFE;
+$voilet: #1e001e;
 $pink: #FFA0E3;
-$text: #EBD7FF;
+$periwinkle: #EBD7FF;
+$yoghurt: #d1e6ff;
+
+// Properties? I'm unsure what to call this. 
+$background: $black;
+$blockquote: $pink;
+$text: $periwinkle;
+$links: $purple;
