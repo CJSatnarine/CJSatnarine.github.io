@@ -28,11 +28,13 @@ h1 {
   color: colours.$purple;
 }
 
+blockquote > p {
+  color: colours.$pink;
+}
+
 p {
   color: colours.$text;
 }
-
-// Shortcodes can be used to customise markdown stuff. 
 
 #test {
   color: colours.$pink;
