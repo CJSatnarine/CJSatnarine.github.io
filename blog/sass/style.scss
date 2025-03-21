@@ -81,11 +81,15 @@ ul li {
 }
 
 code {
-  color: colours.$pink;
+  color: colours.$code;
 }
 
 li {
   color: colours.$white;
+}
+
+em, strong{
+  color: colours.$blockquote;
 }
 
 hr {

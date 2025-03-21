@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+    {{ section.title }}
+</h1>
+
+{{ section.content | safe }}
+
+<a href="{{ get_url(path='@/projects/vaxandi_forritari/_index.md') }}">vaxandi forritari</a>
+<ul>
+    {% for page in section.pages %}
+    <li><a id="blog_colour" href="{{ page.permalink | safe }}">{{ page.title }}</a></li>
+    {% endfor %}
+</ul>
+
+{% endblock content %}
