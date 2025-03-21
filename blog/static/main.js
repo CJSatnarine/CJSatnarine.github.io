@@ -14,7 +14,7 @@ const renderer = new THREE.WebGLRenderer({
     canvas: document.querySelector('#rendering_canvas'),
 });
 renderer.setPixelRatio(window.devicePixelRatio);
-renderer.setSize(window.innerWidth, window.innerHeight);
+renderer.setSize(window.innerWidth, window.innerHeight); // Maybe I should change the size of this eventually, sometimes it's too big.
 renderer.setAnimationLoop(animate);
 document.body.appendChild(renderer.domElement);
 

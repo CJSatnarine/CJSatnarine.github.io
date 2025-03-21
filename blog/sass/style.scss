@@ -76,8 +76,12 @@ ul li {
   color: colours.$text;
 }
 
-p {
+#text, p {
   color: colours.$text;
+}
+
+code {
+  color: colours.$pink;
 }
 
 li {
