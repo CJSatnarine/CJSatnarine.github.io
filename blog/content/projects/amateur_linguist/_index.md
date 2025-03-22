@@ -1,5 +1,5 @@
 +++
-template = "projects.html"
-title = "Vaxandi Forritari"
+template = "amateur_linguist.html"
+title = "Amateur Linguist"
 +++
 I speak languages. 

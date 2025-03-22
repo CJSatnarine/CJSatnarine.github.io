@@ -93,7 +93,7 @@ em, strong{
 }
 
 hr {
-  background: linear-gradient(to right, colours.$h1, colours.$h2, colours.$h3, colours.$h4, colours.$h5, colours.$h6);
+  background: linear-gradient(to right, colours.$h1, colours.$h1, colours.$h2, colours.$h3, colours.$h4, colours.$h5, colours.$h6);
   height: 5px;
   border: 0;
 }
