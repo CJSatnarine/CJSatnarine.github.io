@@ -40,6 +40,33 @@ h6 {
   color: colours.$h6;
 }
 
+blockquote>p {
+  color: colours.$blockquote;
+}
+
+ul li {
+  color: colours.$text;
+}
+
+code {
+  color: colours.$code;
+}
+
+li {
+  color: colours.$white;
+}
+
+em,
+strong {
+  color: colours.$blockquote;
+}
+
+hr {
+  background: linear-gradient(to right, colours.$h1, colours.$h1, colours.$h2, colours.$h3, colours.$h4, colours.$h5, colours.$h6, colours.$h6);
+  height: 5px;
+  border: 0;
+}
+
 #vaxandi_forritari {
   color: colours.$h1;
 }
@@ -56,44 +83,19 @@ h6 {
   color: colours.$h4;
 }
 
-#junior_animator {
+#adventuring_animator {
   color: colours.$h5;
 }
 
 #music_enjoyer {
-  color:colours.$h6;
+  color: colours.$h6;
 }
 
 #subtitle {
   color: colours.$dates;
 }
 
-blockquote>p {
-  color: colours.$blockquote;
-}
-
-ul li {
+#text,
+p {
   color: colours.$text;
-}
-
-#text, p {
-  color: colours.$text;
-}
-
-code {
-  color: colours.$code;
-}
-
-li {
-  color: colours.$white;
-}
-
-em, strong{
-  color: colours.$blockquote;
-}
-
-hr {
-  background: linear-gradient(to right, colours.$h1, colours.$h1, colours.$h2, colours.$h3, colours.$h4, colours.$h5, colours.$h6);
-  height: 5px;
-  border: 0;
 }

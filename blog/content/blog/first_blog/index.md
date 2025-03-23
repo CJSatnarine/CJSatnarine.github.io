@@ -1,6 +1,7 @@
 +++
 title = "First blog post: Website Stuff"
 date = "2025-03-21"
+authors = ["CJ Satnarine"]
 +++
 This is the first blog post I have made here, or any where for that matter. The entire purpose of this blog was to test out how it would be to write one.
 

@@ -14,6 +14,9 @@ highlight_code = true
 
 render_emoji = true
 
+[link_checker]
+internal_level = "warn"
+
 [extra]
 # Put all your custom variables here
 site_name = "CJ Satnarine"
