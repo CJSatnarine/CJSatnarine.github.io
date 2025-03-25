@@ -2,7 +2,7 @@
 template = "index.html"
 title = "CJ Satnarine"
 +++
-I'm a 20 year old Software Engineering drop out from Kitchener, Ontario. I spend most of my day just learning things relating to my interests. 
+I'm a 20 year old Software Engineering drop out from Kitchener, Ontario. I love FOSS. 
 
 <h2 id="vaxandi_forritari">
     Vaxandi Forritari 
@@ -23,7 +23,7 @@ The phrase ***Vaxandi Forritari*** is Icelandic for ***learning programmer***. I
     Aspiring Graphics Programmer 
 </h2>
 
-My interest in graphics rose after realising that I didn't like software engineering, but instead with graphics and programming. I am currently learning OpenGL with C++, as well as learning GLSL for computer shading. I hope to work in Vulkan in the future.  
+My interest in graphics rose after realising that I didn't like software engineering, but instead graphics and programming.  
 
 <h2 id="amateur_linguist"> 
     Amateur Linguist 
@@ -34,8 +34,8 @@ I'm really into languages. Since I was kid, I have loved learning about other cu
 - *Español*: learnt some Spanish when I was younger, not really good at it but I can barely hold a conversation
 - *Français*: learnt a bit in school, but my French is really bad as I often confuse Parisian French with Swiss French
 - *Nederlands*: learnt some when I was younger, I'm not as good as I used to be
-- *Dansk*: I had to pretend to be Danish for a year (it's just like how it sounds...)
-- *Íslenska*: I know this cool Icelandic guy and the language is so cool like omg what do you mean you told Denmark to piss off
+- *Dansk*: an unfortunate event occured
+- *Íslenska*: I know this cool Icelandic guy and the language is so cool
 - *Norsk*: Norwegian is interesting but I already know some Danish and I'm not sure if I want to learn Danish cloned
 - *lingua latina*: learnt a bit in school, pretty cool language
 - *ελληνικά*: Greek is kinda cool, I wanna learn it in the future
@@ -50,7 +50,7 @@ Unfortunately, I do not think I'll be able to learn all of these languages. That
     Wannabe Game Developer 
 </h2>
 
-As mentioned, my interest in programming came with my introduction to game development. 
+As mentioned, my interest in programming came from learning how to make a game in Unity. I still dabble around with Unity, but now I plan on working in Godot. I also had a period where I tried to work with [Blender's game engine](https://upbge.org/#/), but I didn't end up liking it (I'm not a huge fan of Python). 
 
 <h2 id="adventuring_animator"> 
     Adventuring Animator 
@@ -60,4 +60,5 @@ As mentioned, my interest in programming came with my introduction to game devel
     Music Enjoyer 
 </h2>
 
-<canvas id="rendering_canvas"/>
+I listen to a lot of music. A lot of the music I listen to are in other languages, German in particular. I hope to eventually learn how to make my own music, for both games 
+
