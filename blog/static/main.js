@@ -27,7 +27,7 @@ footer.before(canvas);
 if (window.innerWidth <= 400) {
     camera.position.z = 6.5;
 }
-if (window.innerWidth > 400 && window.innerWidth <= 650) {
+else if (window.innerWidth > 400 && window.innerWidth <= 650) {
     camera.position.z = 5.5;
 }
 else if (window.innerWidth > 650 && window.innerWidth <= 915) {
