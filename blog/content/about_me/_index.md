@@ -4,7 +4,7 @@ title = "CJ Satnarine"
 +++
 Hallo, I'm CJ! I'm a 20 year old from Kitchener, Ontario with dreams of being a graphics programmer/technical artist/game developer. I attended Software Engineering Technology at Conestoga College between September 2023 and August 2024. Turned out software engineering wasn't my cup of tea, so I dropped out. Nowadays I'm just working on projects and trying to teach myself a few things.  
 
-I do not use generative AI in any of my work. At this moment, I do not plan on using generative AI as I am not very fond of using it. I want my own works to be *my* own works.  
+I do not use generative AI in any of my work. At this moment, I do not plan on using generative AI as I am not very fond of using it.  
 
 <h2 id="vaxandi_forritari">
     Vaxandi Forritari 
