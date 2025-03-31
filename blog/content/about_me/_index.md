@@ -2,11 +2,9 @@
 template = "index.html"
 title = "CJ Satnarine"
 +++
-Hallo, I'm CJ! I'm a 20 year old from Kitchener, Ontario with dreams of being a graphics programmer/technical artist/game developer. I attended Software Engineering Technology at Conestoga College between September 2023 and August 2024. Turned out I didn't like software engineering, so I dropped out. Nowadays I'm just working on projects and trying to teach myself a few things.  
+Hallo, I'm CJ! I'm a 20 year old from Kitchener, Ontario with dreams of being a graphics programmer/technical artist/game developer. I attended Software Engineering Technology at Conestoga College between September 2023 and August 2024. Turned out software engineering wasn't my cup of tea, so I dropped out. Nowadays I'm just working on projects and trying to teach myself a few things.  
 
-I do not use generative AI in any of my work. At this moment, I do not plan on using generative AI in any of my work. 
-
-I like sharing and learning about things relating to my interests in maths, art, computer graphics, linguistics, history, tech, and programming.
+I do not use generative AI in any of my work. At this moment, I do not plan on using generative AI as I am not very fond of using it. I want my own works to be *my* own works.  
 
 <h2 id="vaxandi_forritari">
     Vaxandi Forritari 
@@ -28,13 +26,13 @@ The phrase ***Vaxandi Forritari*** is Icelandic for ***learning programmer***. I
     Aspiring Graphics Programmer 
 </h2>
 
-My admiration for computer graphics grew with my interests in programming and 3D animation. Finding out I can combine my love for programming and graphics changed me. Since July of 2024, I have been trying teaching myself graphics programming (it's difficult but I love it). Currently, I am teaching myself *OpenGL* and *GLSL*. Eventually, I hope to move onto something modern like *Vulkan* once I'm more experienced. I also hope to experiment more with *HLSL* in Unity and the *Godot Shader Language* in Godot. 
+My admiration for computer graphics grew with my interests in programming and 3D animation. Since July of 2024, I have been trying teaching myself graphics programming (it's difficult but I love it). Currently, I am teaching myself *OpenGL* and *GLSL*. Eventually, I hope to move onto something modern like *Vulkan* once I'm more experienced. I also hope to experiment more with *HLSL* in Unity and the *Godot Shader Language* in Godot. 
 
 <h2 id="amateur_linguist"> 
     Amateur Linguist 
 </h2>
 
-I'm really into languages. Since I was kid, I have loved learning about other cultures and traditions, including their languages. For a while, I was grinding Duolingo, but that felt more of a game than actually learning, so I stopped that and tried learning languages through other means. My native tongue is English, but I find interest in these languages: 
+From a young child I had an interest in linguistics. For a while, I was grinding Duolingo, but that felt more of a game than actually learning, so I stopped that and tried learning languages through other means. My native tongue is English, but I find interest in these other languages: 
 - *Deutsch*: currently learning both Hochdeutsch and Schwiizerdütsch from my Swiss friends
 - *Español*: learnt some Spanish when I was younger, not really good at it but I can barely hold a conversation
 - *Français*: learnt a bit in school, but my French is really bad as I often confuse Parisian French with Swiss French
@@ -47,7 +45,7 @@ I'm really into languages. Since I was kid, I have loved learning about other cu
 - *Русский*: I have no interest in learning Russian but I am going to torture myself by learning Russian just to read Tolstoy's War and Peace its original language
 - *Suomi*: my brother is learning Finnish so I might learn it as well for the funnies
 - *Davvisámegiella*: I discovered Northern Sámi through music, and I think it's a cool language
-- *Kalaallisut*: Greenlandic was also discovered through my music, I think it's also cool 
+- *Kalaallisut*: Greenlandic was also discovered through music, I think it's also cool 
 
 Unfortunately, I do not think I'll be able to learn all of these languages. That's fine, I'm happy about learning as much as I can. 
 
