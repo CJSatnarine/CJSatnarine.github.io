@@ -76,3 +76,4 @@ While learning and falling in love with programming at age 16, I also fell in lo
 I listen to a lot of music. Uh, what type of music? It's a complicated mess. The genres and languages of the music I listen to is all over the place. I hope to eventually learn how to make my own music for future animation and game development projects using [LMMS](https://lmms.io/).
 
 <!--- <canvas id="rendering_canvas"/> --->
+<canvas id="rendering_canvas"/>
