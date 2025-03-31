@@ -14,7 +14,7 @@ const renderer = new THREE.WebGLRenderer({
     canvas: document.querySelector('#rendering_canvas'),
 });
 renderer.setPixelRatio(window.devicePixelRatio);
-renderer.setSize(window.innerWidth, window.innerHeight); // Maybe I should change the size of this eventually, sometimes it's too big.
+renderer.setSize(window.innerWidth, window.innerHeight); 
 renderer.setAnimationLoop(animate);
 document.body.appendChild(renderer.domElement);
 
@@ -23,7 +23,8 @@ let footer = document.querySelector('#footer');
 let canvas = document.querySelector('#rendering_canvas');
 footer.before(canvas);
 
-// Resizing the camera position based on window width. (change this to be automatic I guess) 
+// Resizing the camera position based on window width. 
+// TODO: This HAS to be changed to be better bruv what even is this??
 if (window.innerWidth <= 400) {
     camera.position.z = 6.5;
 }
