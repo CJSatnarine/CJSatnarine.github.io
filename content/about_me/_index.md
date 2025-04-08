@@ -6,6 +6,8 @@ Hallo, I'm CJ! I'm a 20 year old from Kitchener, Ontario with dreams of being a 
 
 I do not use generative AI in any of my work. At this moment, I do not plan on using generative AI because I do not need it. My goal is to learn, not to be productive and fast; AI is a tool that I'll prefer not to use for my projects. 
 
+I try to use mainly free and open source softwares (FOSS) for my projects. 
+
 <h2 id="vaxandi_forritari">
     Vaxandi Forritari 
 </h2>
