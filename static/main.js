@@ -71,5 +71,4 @@ function animate() {
     let degrees = -0.5;
     modelObject.rotateY(degrees * (Math.PI / 180));
     renderer.render(scene, camera);
-    //requestAnimationFrame(animate); // idk why this made things spin out of control lmao
 }
