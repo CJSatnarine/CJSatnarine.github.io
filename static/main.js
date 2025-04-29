@@ -5,10 +5,6 @@ const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 let modelObject = new THREE.Object3D;
 
-// Rotation speed of the 3D model. 
-const rotationSpeed = 1.0;
-let previousFrame = performance.now();
-
 // Rendering.
 const renderer = new THREE.WebGLRenderer({
     canvas: document.querySelector('#rendering_canvas'),
@@ -72,14 +68,7 @@ objectLoader.load(
 
 // Animate function.
 function animate() {
-    const currentFrame = performance.now();
-    const deltaTime = (currentFrame - previousFrame) / 1000;
-    previousFrame = currentFrame;
-
-    const rotationAngle = rotationSpeed * deltaTime;
-    modelObject.rotateY(-rotationAngle);
-
+    let degrees = -0.5;
+    modelObject.rotateY(degrees * (Math.PI / 180));
     renderer.render(scene, camera);
-
-    requestAnimationFrame(animate);
 }
