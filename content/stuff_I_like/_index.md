@@ -18,6 +18,7 @@ This is in no way all of my favourite artists, there are too many to list. These
 ## Films and Animations
 - *The Seventh Seal/Det Sjunde Inseglet* (1957, Ingmar Bergman)
 - *Godland/Volaða Land* (2022, Hlynur Pálmason)
+- *Bob* (by [InfinityBurrito](https://www.youtube.com/@infinityburrito5299/featured))
 - *The Transformers* (1984-1987)
 ## Games
 I'm not really a gamer but these are some stuff I liked:
