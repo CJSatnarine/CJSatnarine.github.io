@@ -2,9 +2,9 @@
 template = "amateur_linguist.html"
 title = "Amateur Linguist"
 +++
-I speak languages. I like languages. I learn languages. Here you will find my linguistics projects.
+Languages are cool. I like languages. I want to languages. Here you will find my linguistics projects.
 
-As a young child, I have had an interest in linguistics. For a while, I was grinding Duolingo, but that felt more of a game than actually learning, so I stopped that and tried learning languages through other means. My native tongue is English, but I find interest in these other languages: 
+As a young child, I have had an interest in linguistics. For a while, I was grinding Duolingo, but that felt more of a game than actually learning, so I stopped that and tried learning languages through other means. My native tongue is *English*, but I find interest in these other languages: 
 - *Deutsch*: currently learning both Hochdeutsch and Schwiizerdütsch from my Swiss friends
 - *Español*: learnt some Spanish when I was younger, not really good at it but I can barely hold a conversation
 - *Français*: learnt a bit in school, but my French is really bad as I often confuse Parisian French with Swiss French
