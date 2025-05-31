@@ -11,5 +11,7 @@ Here you'll find my game dev projects. I have had an interest in game developmen
 - *Pygame*: did a bit in highschool, but that's about it
 - *Kyzen*: soon to be first beta tester of [Kyzen 2D game engine](https://github.com/luut189/kyzen)
 
+I am currently trying to focus on using Unity. 
+
 ## Projects
 ###### Projects coming soon!

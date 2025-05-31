@@ -11,10 +11,9 @@ The phrase ***Vaxandi Forritari*** is Icelandic for ***learning programmer***. I
 - *Python*: learnt it for scripting with the [Blender Python API](https://docs.blender.org/api/current/index.html), later used it to try out Pygame and [Blender's game engine](https://upbge.org/#/)
 - *Arduino*: this is C but I learnt this before learning C/C++, used it in Computer Engineering classes in highschool
 - *C/C++*: used a bit of it for programming [Mirobo UBMP4s](https://mirobo.tech/ubmp4) in high school Computer Engineering classes, learnt way more in college when persuing software engineering
-- *6808 Assembly*: learnt it in college and I never want to touch it again
+- *6808 Assembly*: learnt it in college and I never want to touch it again (I actually have an interest in it but I'll touch it again when I'm older and (probably) wiser)
 - *HTML, CSS*: learnt it to make this website
 - *JavaScript*: learnt it to script in Three.js
 - *Lua*: used to configure Neovim, used a bit with LÖVE
-- *GDScript*: learning it to use with the Godot game engine
  ## Projects
 ###### Projects coming soon!  
