@@ -5,6 +5,7 @@ title = "Stuff I Like"
 ## Music
 This is in no way all of my favourite artists, there are too many to list. These are just the ones I really enjoy and don't mind sharing: 
 - *Molchat Doma* 
+- *LOOK MUM NO COMPUTER*
 - *FIBEL*: I really like their songs Winter and Unique.
 - *HARBOUR*
 - *Provinz*: I just listened to them a lot when I was learning German.

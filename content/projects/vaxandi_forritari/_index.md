@@ -2,7 +2,7 @@
 template = "projects.html"
 title = "Vaxandi Forritari"
 +++
-This is where you'll find my coding projects, tech projects, anything that's coding but isn't <a id="aspiring_graphics_programmer" href="/projects/aspiring_graphics_programmer/">graphics programming</a> or <a id="wannabe_game_developer" href="/projects/wannabe_game_developer/">game development</a>.
+This is where you'll find my coding projects, tech projects, anything that's coding but isn't <a id="aspiring_graphics_programmer" href="/projects/aspiring_game_developer/">game development</a>.
 
 The phrase ***Vaxandi Forritari*** is Icelandic for ***learning programmer***. I'm still learning a lot, so I'm a *vaxandi forritari* in a way. I discovered my love for programming in highschool at the age of 16, when I was learning to use the Unity game engine. I'm familiar with the following programming languages:
 - *C#*: learnt it in 2021 for scripting in Unity
