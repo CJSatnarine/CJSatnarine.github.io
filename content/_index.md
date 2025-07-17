@@ -15,7 +15,7 @@ title = "CJ Satnarine"
 
 Hey, I'm CJ! I'm an aspiring graphics programmer/technical artist/game developer from Waterloo. I like coding and animating and languages and computers and reading and music. 
 
-I attended Software Engineering Technology at Conestoga College between September 2023 and August 2024. Turned out software engineering wasn't my cup of tea, so I dropped out. Nowadays I'm just working on projects, volunteering at a [computer recycling centre](https://www.theworkingcentre.org/projects/computer-recycling/), and trying to teach myself a few things.
+I attended Software Engineering Technology at Conestoga College between September 2023 and August 2024. Turned out software engineering wasn't my cup of tea, so I dropped out. Nowadays I'm just working on projects, volunteering at [Computer Recycling at the Working Centre](https://www.theworkingcentre.org/projects/computer-recycling/), and trying to teach myself a few things.
 
 > I do not use generative AI in any of my work. At this moment, I do not plan on using generative AI because I do not need it: my goal is to learn, not to just get things done.
 
@@ -24,7 +24,9 @@ I attended Software Engineering Technology at Conestoga College between Septembe
 - [YouTube](https://www.youtube.com/@CJSatnarine) (I'll upload something soon, probably)
 - [ArtStation](https://www.artstation.com/cjsatnarine) (I don't even use this but I guess maybe in the future I will)
 - [Instagram](https://www.instagram.com/cjsatnarine/) (I'm not on there so often)
+- [LinkedIn](https://www.linkedin.com/in/cj-satnarine-a1a8b6293/) (As much as I try, I can't take that soul-crushing website seriously. I'll try to post some stuff there.)
+- [Medium](https://medium.com/@cjsatnarine) (I'll post blogs here eventually)
 ## Feel free to contact me via:
 - `.just_cj` : Discord
-- `satnarinecj101@gmail.com` : E-mail
+- `cjsatnarine@protonmail.com` : E-mail
 <canvas id="rendering_canvas"/>
