@@ -25,4 +25,4 @@ This is in no way all of my favourite artists, there are too many to list. These
 I'm not really a gamer but these are some stuff I liked:
 - *Sable* (Shedworks)
 - *Plants vs. Zombies* (Popcap Games)
-- *Viewfinder* (Sad Own Studios)
+- *Viewfinder* (Sad Owl Studios)
