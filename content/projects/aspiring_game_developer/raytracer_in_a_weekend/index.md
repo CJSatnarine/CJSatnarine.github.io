@@ -3,11 +3,26 @@ title = "Raytracer"
 +++
 [GitHub Link](https://github.com/CJSatnarine/Raytracer)
 
-I started working on this raytracer on the 3rd of July, 2024. As of time of writing (19th of May, 2025), that was about 11 months ago. It was my first graphics programming project, and I learnt quite a bit doing it. Do I remember everything from it? Not at all. To make this raytracer, I followed the books [_Ray Tracing in One Weekend_](https://raytracing.github.io/books/RayTracingInOneWeekend.html) and [_Ray Tracing: The Next Week_](https://raytracing.github.io/books/RayTracingTheNextWeek.html). This was programmed in C++, and for majority of this I was just following through with the code of the books while taking in the important concepts. 
-
-I'd like to note that I was (and still am) incredibly bad with maths, so I wouldn't be explaining the maths behind stuff here. Check out the [books](https://raytracing.github.io/) for that. I hope to revisit this project again so I can understand how the maths actually worked. 
+I started working on this raytracer on the 3rd of July, 2024. It was my first graphics programming project, and I learnt quite a bit doing it. To make this raytracer, I followed the books [_Ray Tracing in One Weekend_](https://raytracing.github.io/books/RayTracingInOneWeekend.html) and [_Ray Tracing: The Next Week_](https://raytracing.github.io/books/RayTracingTheNextWeek.html). This was programmed in C++, and for majority of this I was just following through with the code of the books while taking in the important concepts. 
 
 > TLDR: I learnt to use CMake to build the project. I rendered the images to PPM files. I basically followed the code in the books to make the raytracer.
+
+### Some images I made :D 
+Here's an happy accident I ran into when I had a typo in my code, I think it looks cool:
+
+![happy accident](failedRender.png)
+
+Here's my face on a sphere because I thought it was funny at the time: 
+
+![face on a sphere](funny.png)
+
+###### more images is coming soon LOL
+
+### How the programme works: 
+In the `main.cpp` file, there are a bunch of functions that are supposed to render something. I have a switch statement that just assign the different scenes to render. A sort of lazy menu. 
+
+![Scene Chooser](sceneChooser.png)
+
 ## CMake
 It was the first time I used CMake to build a project to run on different platforms. I'm not sure what else to say, it's CMake. It did take me a while to get this stuff working so there's that. 
 
@@ -37,17 +52,18 @@ The top 3 lines discussed earlier were printed to the console earlier in the cod
 ![pixels image](pixels.png)
 
 ## The Raytracer
-I'll be honest, I'm this writing project page thingy after nearly a year since I worked on this project. There was a lot covered, and I was introduced to a lot of new concepts, but I'm not confident with how much I actually recall from the raytracer itself.
-### How it works
-So basically what you do is shoot a bunch of rays from the camera to points (or every pixel for the raytracer) and determine which objects the ray intersect, calculating the colour for the point closest to the camera.  
-### Okay what about the other stuff??
-What I remember from the project is all a blur. I have an idea of how antialiasing works, but I can't really explain with great detail why it works, and I don't ~recall~ know enough to explain how the maths behind it. That's the case for a lot of the other stuff here. 
+Okay so the way this works is that a raytracer sends rays through pixels and calculates the colour for each ray sent. The steps are basically: 
+1. Calculate the ray from the camera through the pixel. 
+2. Determine which objects in the scene the ray intersects. Those objects will be rendered. 
+3. Computer a colour for the closest intersection point. 
 
-## Final Words
-The purpose of this project was to learn how raytracing worked. I did that, but not exactly, as I now have a sort of idea of how it works but not a full understanding. As my first graphics programming project, I think I did okay trying to understand raytracing, even though I can't recall much of it. This project sort of gave me an idea of how complicated graphics was, and I unintentially learnt more about CMake, PPM files, and some C++ stuff than the maths behind raytracing lol. 
+Building this took a lot of maths, which the book would explain in a much better way than I ever could.What I would be explaining some of the cool topics I learnt while following this book. 
 
-Any way, here's a happy accident I ran into when I was trying to render the final render from the book, I think it looks cool:
+### Camera Stuff
+Cameras are, like, important. It's how we see into the scene. :exploding_head: But ya, cameras have aspect ratios. It's basically the ratio of the image width and the image height. For this raytracer, the height of the image is calculated with the image's aspect ratio and the width (`image_height = image_width / (aspect_ratio)`), so you only have to tweak the width when working on resizing the image and also keep the desired aspect ratio. 
 
-![happy accident](failedRender.png)
+Viewports are also pretty important. It's a virtual rectangle in the 3D world that holds the grid of image pixel locations. We need this to pass through all the scene rays. 
 
-I hope to redo this project and actually learn more stuff, perhaps in OpenGL. 
+A problem here is that the camera centre is at some point in 3D space, and the pixel grid starts from the top left cornr and ends at the bottom right with the last pixel. To get them to work together, the rendering starts from the top left to the top right, and then to the next row im a similar fashion, through the rest of rows until the last pixel. Vectors from the left edge to the right edge, and the upper edge to the lower edge are used to navigate the grid. The pixel grid is also inset from the viewport by half a pixel distance so that the viewport is evenly divided into width and height identical regions. 
+
+###### I'll update the rest of the page when I understand the concepts well enough to explain them. Yeah there's a lot of maths here that I don't have a full grasp of, yet. 
