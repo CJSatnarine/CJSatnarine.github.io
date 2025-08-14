@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>CJ Satnarine</title>
+
+    <link rel="stylesheet" href="/style.css" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.174.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.174.0/examples/jsm/"
+            }
+    }
+    </script>
+
+    <script type="module" src="/main.js"></script>
+    <script type="module" src="/window.js"></script>
+</head>
+
+<nav>
+    <a href="https://cjsatnarine.github.io/">Home</a>
+    <span id="text"> | </span><a href="https://cjsatnarine.github.io/blog/"><strike>Rants</strike> Posts</a>
+    <span id="text"> | </span><a href="https://cjsatnarine.github.io/projects/">My Stuff</a>
+    <span id="text"> | </span><a href="https://cjsatnarine.github.io/stuff_I_like/">Stuff I Like</a>
+    <hr>
+</nav>
+
+<body>
+    <section class="section">
+        <div class="container">
+            
+<h1 id="title" class="title">
+    Raytracer
+</h1>
+
+<p><a href="https://github.com/CJSatnarine/Raytracer">GitHub Link</a></p>
+<p>I started working on this raytracer on the 3rd of July, 2024. It was my first graphics programming project, and I learnt quite a bit doing it. To make this raytracer, I followed the books <a href="https://raytracing.github.io/books/RayTracingInOneWeekend.html"><em>Ray Tracing in One Weekend</em></a> and <a href="https://raytracing.github.io/books/RayTracingTheNextWeek.html"><em>Ray Tracing: The Next Week</em></a>. This was programmed in C++, and for majority of this I was just following through with the code of the books while taking in the important concepts.</p>
+<blockquote>
+<p>TLDR: I learnt to use CMake to build the project. I rendered the images to PPM files. I basically followed the code in the books to make the raytracer.</p>
+</blockquote>
+<h3 id="some-images-i-made-d">Some images I made :D</h3>
+<p>Here's an happy accident I ran into when I had a typo in my code, I think it looks cool:</p>
+<p><img src="https://cjsatnarine.github.io/projects/aspiring_game_developer/raytracer-in-a-weekend/failedRender.png" alt="happy accident" /></p>
+<p>Here's my face on a sphere because I thought it was funny at the time:</p>
+<p><img src="https://cjsatnarine.github.io/projects/aspiring_game_developer/raytracer-in-a-weekend/funny.png" alt="face on a sphere" /></p>
+<h6 id="more-images-is-coming-soon-lol">more images is coming soon LOL</h6>
+<h3 id="how-the-programme-works">How the programme works:</h3>
+<p>In the <code>main.cpp</code> file, there are a bunch of functions that are supposed to render something. I have a switch statement that just assign the different scenes to render. A sort of lazy menu.</p>
+<p><img src="https://cjsatnarine.github.io/projects/aspiring_game_developer/raytracer-in-a-weekend/sceneChooser.png" alt="Scene Chooser" /></p>
+<h2 id="cmake">CMake</h2>
+<p>It was the first time I used CMake to build a project to run on different platforms. I'm not sure what else to say, it's CMake. It did take me a while to get this stuff working so there's that.</p>
+<h2 id="ppm-images">PPM Images</h2>
+<p>This was the first time I had ever came across the <a href="https://en.wikipedia.org/wiki/Netpbm">PPM image format (it's somewhere on this Wikipedia article I swear, just go look for it)</a>. Prior to this I genuinely had no idea how you could send data to files and stuff like that. The PPM is really simple to work with. I'll summarise it by a screenshot of the little rant I sent to my best friend's dms:</p>
+<p><img src="https://cjsatnarine.github.io/projects/aspiring_game_developer/raytracer-in-a-weekend/screenshot.png" alt="screenshot image" /></p>
+<p>As you can see, very epic balls.
+However, I didn't explain what the first 3 lines of the PPM file represented.</p>
+<p>The first line, the <code>P3</code>, represents a two-byte magic number. For these files, the magic number works as some sort of identifier to show what type of file we're dealing with. To avoid going on a rant aboutb PPM files, I'm just going to say that the <code>P3</code> means that we're dealing with an RGB colour image in ASCII.</p>
+<p>The second line, where it shows two numbers (<code>400 255</code>), is the number of columns and rows (respectively) in the image.</p>
+<p>The third line, <code>255</code>, tells us the maximum colour.</p>
+<p>Everything after the third line (the group of 3 RGB values) are the RGB values of each individual pixel per line.</p>
+<h3 id="writing-to-ppm-files">Writing to PPM Files</h3>
+<p>I'll also summarise the writing to PPM files bit by another part of the rant directed to my best friend's dms:</p>
+<p><img src="https://cjsatnarine.github.io/projects/aspiring_game_developer/raytracer-in-a-weekend/screenshot_code.png" alt="screenshot code image" /></p>
+<p>The top 3 lines discussed earlier were printed to the console earlier in the code. This was where I learnt how to use the redirectional operators, even though it was already taught in my college classes but I guess I wasn't a good student lol. Any way, that code produced the following image:</p>
+<p><img src="https://cjsatnarine.github.io/projects/aspiring_game_developer/raytracer-in-a-weekend/pixels.png" alt="pixels image" /></p>
+<h2 id="the-raytracer">The Raytracer</h2>
+<p>Okay so the way this works is that a raytracer sends rays through pixels and calculates the colour for each ray sent. The steps are basically:</p>
+<ol>
+<li>Calculate the ray from the camera through the pixel.</li>
+<li>Determine which objects in the scene the ray intersects. Those objects will be rendered.</li>
+<li>Computer a colour for the closest intersection point.</li>
+</ol>
+<p>Building this took a lot of maths, which the book would explain in a much better way than I ever could.What I would be explaining some of the cool topics I learnt while following this book.</p>
+<h3 id="camera-stuff">Camera Stuff</h3>
+<p>Cameras are, like, important. It's how we see into the scene. 🤯 But ya, cameras have aspect ratios. It's basically the ratio of the image width and the image height. For this raytracer, the height of the image is calculated with the image's aspect ratio and the width (<code>image_height = image_width / (aspect_ratio)</code>), so you only have to tweak the width when working on resizing the image and also keep the desired aspect ratio.</p>
+<p>Viewports are also pretty important. It's a virtual rectangle in the 3D world that holds the grid of image pixel locations. We need this to pass through all the scene rays.</p>
+<p>A problem here is that the camera centre is at some point in 3D space, and the pixel grid starts from the top left cornr and ends at the bottom right with the last pixel. To get them to work together, the rendering starts from the top left to the top right, and then to the next row im a similar fashion, through the rest of rows until the last pixel. Vectors from the left edge to the right edge, and the upper edge to the lower edge are used to navigate the grid. The pixel grid is also inset from the viewport by half a pixel distance so that the viewport is evenly divided into width and height identical regions.</p>
+<h6 id="i-ll-update-the-rest-of-the-page-when-i-understand-the-concepts-well-enough-to-explain-them-yeah-there-s-a-lot-of-maths-here-that-i-don-t-have-a-full-grasp-of-yet">I'll update the rest of the page when I understand the concepts well enough to explain them. Yeah there's a lot of maths here that I don't have a full grasp of, yet.</h6>
+
+
+        </div>
+    </section>
+</body>
+
+<footer id="footer">
+    <center>
+        <a href="https://evilr.ing/cjsatnarine/previous">&lt;</a>
+        <a href="https://evilr.ing">EVILRING</a>
+        <a href="https://evilr.ing/cjsatnarine/next">&gt;</a>
+        <p> Made with <a href="https://www.getzola.org/">Zola</a></p>
+    </center>
+</footer>
+
+</html>
